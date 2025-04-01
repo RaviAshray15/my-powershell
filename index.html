@@ -19,10 +19,9 @@
                 Windows Portfolio<br><br>
                 Copyright (C) Microsoft Corporation. All rights reserved.<br><br>
                 Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows<br><br><br>
-                PS C:\Users> <input type="text" id="commandInput" autofocus placeholder="Type start()/exit()"><br>
+                PS C:\Users> <input type="text" id="commandInput" autofocus placeholder="Type start()"><br>
                 <span class="comments"><br>
                     <br> <a href="#" onclick="start(); return false;">//start()</a> - To start <br>
-                    <br> <a href="#" onclick="exit(); return false;">//exit()</a> - To exit
                 </span>
                 <br>
                 <span id="comment" class="comment"></span>
@@ -31,13 +30,14 @@
 
         <div id="options" class="options hidden">
             
-            PS C:\Users> <input type="text" id="optionInput" placeholder="Enter 1-5 to select"><br><br>
+            PS C:\Users> <input type="text" id="optionInput" placeholder="Enter 1-5 to select or exit() to exit"><br><br>
             <p>Choose an option: </p>
             <p class="option" onclick="showContent('About Me')">[1] About Me</p>
             <p class="option" onclick="showContent('Skills')">[2] Skills</p>
             <p class="option" onclick="showContent('Projects')">[3] Projects</p>
             <p class="option" onclick="showContent('Contact')">[4] Contact</p>
             <a class="option" href="Ravi Ashray's Resume.pdf" target="_blank">[5] Resume</a>
+            <p class="option" onclick="exit(); return false;">[6] Exit</p>
         </div>
     </div>
 
