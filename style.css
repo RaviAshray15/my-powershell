@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    background-color: black;
+    color: white;
+    font-family: 'Consolas', sans-serif;
+    font-size: 16px;
+}
+
+.opening,
+.options {
+    margin: 40px 100px;
+}
+
+.comment {
+    color: green;
+    opacity: 0;
+}
+
+.cursor {
+    display: inline-block;
+    width: 8px;
+    height: 16px;
+    opacity: 1;
+    animation: blink 1s infinite;
+    background-color: white;
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+}
+
+.option {
+    cursor: pointer;
+    width: 140px;
+    color: cyan;
+}
+
+.option:hover {
+    text-decoration: underline;
+
+}
+
+#content {
+    margin: 40px 100px;
+    white-space: pre-wrap;
+    color: white;
+    text-decoration: none;
+}
+
+#content a {
+    color: cyan;
+    text-decoration: none;
+}
+
+#content a:hover {
+    text-decoration: underline;
+}
+
+::selection {
+    background-color: white;
+    color: blue;
+}
