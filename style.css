@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100..700&display=swap');
 
 body {
     margin: 0;
@@ -14,30 +14,38 @@ body {
     margin: 40px 100px;
 }
 
+.comments {
+    color: green;
+}
+
+.comments a {
+    color: cyan;
+    text-decoration: none;
+}
+
+.comments a:hover {
+    text-decoration: underline;
+}
+
 .comment {
-    color: #01b501;
+    color: red;
     opacity: 0;
 }
 
-.cursor {
-    display: inline-block;
-    width: 8px;
-    height: 16px;
-    opacity: 1;
-    animation: blink 1s infinite;
-    background-color: white;
+#commandInput,
+#optionInput {
+    background: transparent;
+    border: none;
+    color: white;
+    font-family: 'Roboto Mono', sans-serif;
+    font-size: 14px;
+    width: 200px;
+    outline: none;
+    caret-color: cyan;
 }
 
-@keyframes blink {
-
-    0%,
-    100% {
-        opacity: 1;
-    }
-
-    50% {
-        opacity: 0;
-    }
+#input {
+    color: green;
 }
 
 .option {
@@ -54,7 +62,6 @@ body {
     margin: 40px 100px;
     white-space: pre-wrap;
     color: white;
-    text-decoration: none;
 }
 
 #content a {
@@ -66,57 +73,29 @@ body {
     text-decoration: underline;
 }
 
-::selection {
-    background-color: white;
-    color: blue;
+.hidden {
+    display: none;
 }
 
-/* Responsive Styles */
 @media (max-width: 768px) {
-    body {
-        margin: 70px 0;
-    }
-
     .opening,
-    .options {
-        margin: 20px 40px;
-    }
-
-    .option {
-        width: auto;
-        font-size: 14px;
-    }
-
-    #content {
-        margin: 20px 40px;
-    }
-
-    body {
-        font-size: 14px;
+    .options, #content {
+        margin: 50px;
     }
 }
 
-@media (max-width: 480px) {
-    body {
-        margin: 70px 0;
-        font-size: 12px;
-    }
+@media (max-width: 520px) {
 
     .opening,
     .options {
-        margin: 10px 20px;
+        margin: 50px;
     }
 
-    .option {
-        font-size: 12px;
+    .comments {
+        margin: 0;
     }
 
     #content {
-        margin: 10px 20px;
+        margin: 50px;
     }
-
-    .option:last-child{
-        margin-bottom: 30px;
-    }
-    
 }
