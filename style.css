@@ -41,9 +41,9 @@ body {
 }
 
 .option {
-    cursor: pointer;
-    width: 140px;
     color: cyan;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .option:hover {
