@@ -40,6 +40,9 @@ optionInput.addEventListener("keydown", function (event) {
             case "5":
                 window.open("Ravi Ashray's Resume.pdf", "_blank");
                 break;
+            case "6":
+                window.open(exit());
+                break;
             default:
                 showError(option);
                 break;
@@ -53,7 +56,7 @@ function start() {
 }
 
 function exit() {
-    contentDiv.innerHTML = `PS C:\\Users> Thanks for visiting my profile. Reload to start over...`
+    contentDiv.innerHTML = `PS C:\\Users> Thanks for visiting my profile. Reload to start over`
 }
 
 function showContent(option) {
