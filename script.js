@@ -53,9 +53,7 @@ function start() {
 }
 
 function exit() {
-    optionsDiv.classList.add("hidden");
-    contentDiv.innerHTML = "";
-    comment.innerHTML = "";
+    contentDiv.innerHTML = `PS C:\\Users> Thanks for visiting my profile. Reload to start over`
 }
 
 function showContent(option) {
