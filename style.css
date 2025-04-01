@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 body {
     margin: 0;
     background-color: black;
     color: white;
-    font-family: 'Consolas', sans-serif;
-    font-size: 16px;
+    font-family: 'Roboto Mono', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
 }
 
 .opening,
@@ -12,7 +15,7 @@ body {
 }
 
 .comment {
-    color: green;
+    color: #01b501;
     opacity: 0;
 }
 
@@ -35,7 +38,6 @@ body {
     50% {
         opacity: 0;
     }
-
 }
 
 .option {
@@ -46,7 +48,6 @@ body {
 
 .option:hover {
     text-decoration: underline;
-
 }
 
 #content {
@@ -68,4 +69,52 @@ body {
 ::selection {
     background-color: white;
     color: blue;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    body {
+        margin: 70px 0;
+    }
+
+    .opening,
+    .options {
+        margin: 20px 40px;
+    }
+
+    .option {
+        width: auto;
+        font-size: 14px;
+    }
+
+    #content {
+        margin: 20px 40px;
+    }
+
+    body {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        margin: 70px 0;
+    }
+
+    .opening,
+    .options {
+        margin: 10px 20px;
+    }
+
+    .option {
+        font-size: 12px;
+    }
+
+    #content {
+        margin: 10px 20px;
+    }
+
+    body {
+        font-size: 12px;
+    }
 }
