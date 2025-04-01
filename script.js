@@ -41,7 +41,7 @@ optionInput.addEventListener("keydown", function (event) {
                 window.open("Ravi Ashray's Resume.pdf", "_blank");
                 break;
             case "6":
-                window.open(exit());
+                exit();
                 break;
             default:
                 showError(option);
