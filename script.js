@@ -1,4 +1,3 @@
-
 const comment = document.getElementById("comment")
 document.addEventListener("keydown", function (event) {
     if (event.key.length === 1) {
