@@ -56,7 +56,7 @@ function start() {
 }
 
 function exit() {
-    contentDiv.innerHTML = `PS C:\\Users> Thanks for visiting my profile. Reload to start over...`;
+    contentDiv.innerHTML = `PS C:\\Users> Thanks for visiting my profile.`;
 }
 
 function showContent(option) {
